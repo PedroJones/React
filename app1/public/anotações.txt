@@ -1,0 +1,13 @@
+Um state só pode ser alterado a partir da varável set(alguma-coisa).
+
+
+useEffect (() => {
+    setCounter(100);
+  },[]);
+
+No useEffect, o array no fim da função estabelece o parâmetro em que ele será executado. 
+
+Assim, se colocamos uma variável dentro dele ele será executado cada vez que essa variável for alterada, mas se deixarmos o array vazio ele será executado apenas quando a página for recarregada. 
+useEffect (() => {
+    setCounter(100);
+  },[counter]);
